@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import WeatherCard from "./weathercard/component";
+import { countries } from "country-data";
+console.log(countries["TW"].name);
 
 const WeatherEngine = ({ location }) => {
   const [query, setQuery] = useState("");
@@ -17,6 +19,7 @@ const WeatherEngine = ({ location }) => {
     const resJSON = await apiRes.json();
     setWeather({
       temp: resJSON.main.temp,
+      feelslike: resJSON.feels_like,
       city: resJSON.name,
       condition: resJSON.weather[0].main,
       country: resJSON.sys.country,
@@ -36,6 +39,7 @@ const WeatherEngine = ({ location }) => {
     <div>
       <WeatherCard
         temp={weather.temp}
+        feelslike={weather.feels_like}
         condition={weather.condition}
         city={weather.city}
         country={weather.country}

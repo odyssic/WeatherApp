@@ -20,14 +20,11 @@ body {
     justify-content: center;
 }
 
-button {
-    width: 200px;
-    margin: 10px;
-}
-
 form {
     display: flex;
     flex-flow: column;
+    width: inherit;
+    margin: 1rem;
 }
 
 form input,
@@ -45,21 +42,25 @@ textarea {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
-    width: 200px;
+    width: inherit;
 }
 
 button {
-    padding: 0.5rem;
+    padding: 5px 5px 5px 0px;
     font-size: 16px;
     letter-spacing: 1px;
     margin-top: 1rem;
     background: skyblue;
-    width: 200px;
+    width: inherit;
     color: white;
     border: solid 3px white;
     border-radius: 0.25rem;
     cursor: pointer;
     -webkit-appearance: none;
+}
+
+button:hover {
+    background-color: rgb(102, 142, 177);
 }
 
 .form-container {
