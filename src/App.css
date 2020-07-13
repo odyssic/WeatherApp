@@ -9,9 +9,12 @@
     transform: translateY(-50%);
 }
 
+body {
+    background-color: rgb(34, 37, 37);
+}
+
 .app-container {
     height: 350px;
-    position: relative;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -20,4 +23,41 @@
 button {
     width: 200px;
     margin: 10px;
+}
+
+form input,
+textarea {
+    display: inline-block;
+    flex-basis: inherit;
+    flex-grow: inherit;
+    margin: 0.5rem 0;
+    font-size: 16px;
+    padding: 5px 5px 5px 0px;
+    border: solid 3px var(white);
+    font-weight: 400;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    width: 200px;
+}
+
+button {
+    padding: 0.5rem;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    background: skyblue;
+    width: 200px;
+    color: white;
+    border: solid 3px white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.form-container {
+    display: flex;
+    flex-flow: column;
 }
