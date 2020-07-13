@@ -2,9 +2,9 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Location = ({ city, country }) => {
-  // const Container = styled.div`
-  //   text-align: center;
-  // `;
+  const Container = styled.div`
+    text-align: center;
+  `;
 
   const City = styled.h1`
     font-family: "Open Sans", "sans-serif";
@@ -17,10 +17,10 @@ const Location = ({ city, country }) => {
   `;
 
   return (
-    <>
+    <Container>
       <City>{city}</City>
       <Country>{country}</Country>
-    </>
+    </Container>
   );
 };
 

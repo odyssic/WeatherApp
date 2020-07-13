@@ -25,12 +25,17 @@ button {
     margin: 10px;
 }
 
+form {
+    display: flex;
+    flex-flow: column;
+}
+
 form input,
 textarea {
     display: inline-block;
     flex-basis: inherit;
     flex-grow: inherit;
-    margin: 0.5rem 0;
+    margin: 1srem 0;
     font-size: 16px;
     padding: 5px 5px 5px 0px;
     border: solid 3px var(white);
