@@ -44,7 +44,6 @@ const WeatherEngine = ({ location }) => {
         city={weather.city}
         country={weather.country}
       />
-
       <form>
         <input value={query} onChange={(e) => setQuery(e.target.value)} />
         <button onClick={(e) => handleSearch(e)}>Search</button>
