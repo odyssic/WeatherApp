@@ -19,7 +19,6 @@ const WeatherEngine = ({ location }) => {
     const resJSON = await apiRes.json();
     setWeather({
       temp: resJSON.main.temp,
-      feelslike: resJSON.feels_like,
       city: resJSON.name,
       condition: resJSON.weather[0].main,
       country: resJSON.sys.country,
@@ -39,13 +38,17 @@ const WeatherEngine = ({ location }) => {
     <div>
       <WeatherCard
         temp={weather.temp}
-        feelslike={weather.feels_like}
         condition={weather.condition}
         city={weather.city}
         country={weather.country}
       />
       <form>
-        <input value={query} onChange={(e) => setQuery(e.target.value)} />
+        <input
+          required
+          value={query}
+          placeholder="Enter a City"
+          onChange={(e) => setQuery(e.target.value)}
+        />
         <button onClick={(e) => handleSearch(e)}>Search</button>
       </form>
     </div>

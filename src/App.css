@@ -24,6 +24,7 @@ form {
     flex-flow: column;
     width: inherit;
     margin: 1rem;
+    box-shadow: 10px 5px 5px black;
 }
 
 form input,
@@ -35,7 +36,6 @@ textarea {
     font-size: 16px;
     padding: 5px 5px 5px 0px;
     border: solid 3px var(white);
-    font-weight: 400;
     border-radius: 0.25rem;
     font-weight: bold;
     color: gray;
@@ -43,6 +43,7 @@ textarea {
     letter-spacing: 1px;
     width: inherit;
     text-align: center;
+    box-shadow: 10px 5px 5px black;
 }
 
 button {
@@ -50,17 +51,19 @@ button {
     font-size: 16px;
     letter-spacing: 1px;
     margin-top: 1rem;
-    background: skyblue;
+    background-color: rgb(102, 142, 177);
     width: inherit;
     color: white;
     border: solid 3px white;
     border-radius: 0.25rem;
     cursor: pointer;
     -webkit-appearance: none;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px black;
 }
 
 button:hover {
-    background-color: rgb(102, 142, 177);
+    background-color: rgb(47, 76, 102);
 }
 
 .form-container {

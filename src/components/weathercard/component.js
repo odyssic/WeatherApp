@@ -39,7 +39,8 @@ const WeatherCard = ({ temp, feelslike, condition, city, country }) => {
     justify-content: space-around;
     align-items: center;
     border-radius: 15px;
-    border: white 6px solid;
+    border: white 3px solid;
+    box-shadow: 10px 5px 5px black;
   `;
 
   return (
